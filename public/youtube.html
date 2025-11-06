@@ -44,13 +44,16 @@
     <div class="container text-center p-5">
         <h1 class="mb-3">YouTube Video Downloader</h1>
         <label class="mb-2 d-block">Enter YouTube Video URL:</label>
-        <input id="youtube-url" class="form-control w-50 mx-auto" placeholder="YouTube URL">
+        <input type="text" id="youtube-url" placeholder="Enter YouTube URL">
+
+
     <select id="youtube-format" class="form-control w-50 mx-auto mt-2">
         <option value="360p">360p</option>
         <option value="720p">720p</option>
         <option value="highest">Highest</option>
     </select>
     <button class="btn btn-primary mt-3" onclick="downloadVideo('youtube')">Download</button>
+      <div id="youtube-loader" class="mt-3"></div>
     </div>
 
     
